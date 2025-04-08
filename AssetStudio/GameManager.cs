@@ -50,6 +50,7 @@ namespace AssetStudio
             Games.Add(index++, new Game(GameType.SchoolGirlStrikers));
             Games.Add(index++, new Game(GameType.ExAstris));
             Games.Add(index++, new Game(GameType.PerpetualNovelty));
+            Games.Add(index++, new Game(GameType.Arknights));
         }
         public static Game GetGame(GameType gameType) => GetGame((int)gameType);
         public static Game GetGame(int index)
@@ -171,6 +172,7 @@ namespace AssetStudio
         SchoolGirlStrikers,
         ExAstris,
         PerpetualNovelty,
+        Arknights
     }
 
     public static class GameTypes
@@ -193,6 +195,7 @@ namespace AssetStudio
         public static bool IsNaraka(this GameType type) => type == GameType.Naraka;
         public static bool IsOPFP(this GameType type) => type == GameType.OPFP;
         public static bool IsNetEase(this GameType type) => type == GameType.NetEase;
+        public static bool IsArknights(this GameType type) => type == GameType.Arknights;
         public static bool IsArknightsEndfield(this GameType type) => type == GameType.ArknightsEndfield;
         public static bool IsLoveAndDeepspace(this GameType type) => type == GameType.LoveAndDeepspace;
         public static bool IsExAstris(this GameType type) => type == GameType.ExAstris;
